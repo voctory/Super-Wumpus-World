@@ -79,9 +79,6 @@ game.onload = function(){
 	game.flappylogo.x = game.width/2 - 225;
 
 	game.rootScene.addChild(game.flappylogo);
-	logoTimer()
-
-	game.rootScene.addEventListener(enchant.Event.LEFT_BUTTON_DOWN, gameinit);
 
 } // end game.onload #initialize game
 

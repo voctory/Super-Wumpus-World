@@ -37,29 +37,27 @@ window.onload = function() {
 game.preload('../assets/background.png',
 	     '../assets/ground.png',
 	     '../assets/play.png',
-	     '../assets/flappywumpuslogo2.png');
+	     '../assets/flappywumpuslogo2.png',
+	     '../assets/swwlogo.png');
 
 
 // initialize game
 
 game.onload = function(){
 	game.bg = new Sprite(1280,720);
-  game.bg.image = game.assets['../assets/background.png'];
+ 	game.bg.image = game.assets['../assets/background.png'];
 
-  // add game.bg to rootScene
+ 	// add game.bg to rootScene
 	game.rootScene.addChild(game.bg);
 
 	// add the floor
-  game.ground = new Sprite(1280,86);
-  game.ground.image = game.assets['../assets/ground.png'];
-  game.ground.x = 0;
-  game.ground.y = game.height - 48;
+ 	game.ground = new Sprite(1280,86);
+ 	game.ground.image = game.assets['../assets/ground.png'];
+ 	game.ground.x = 0;
+ 	game.ground.y = game.height - 48;
 
-  // add game.ground to rootScene
+ 	// add game.ground to rootScene
 	game.rootScene.addChild(game.ground);
-	
-	// adding mute button
-	
 
 	// adding playbutton stuff
 
@@ -73,12 +71,12 @@ game.onload = function(){
 
 	// adding the logo
 
-	game.flappylogo = new Sprite(464,206);
-	game.flappylogo.image = game.assets['../assets/flappywumpuslogo2.png'];
-	game.flappylogo.y = game.height/2 - 200;
-	game.flappylogo.x = game.width/2 - 225;
+	game.swwlogo = new Sprite(1000,300);
+	game.swwlogo.image = game.assets['../assets/swwlogo.png'];
+	game.swwlogo.y = game.height/2 - 280;
+	game.swwlogo.x = game.width/2 - 500;
 
-	game.rootScene.addChild(game.flappylogo);
+	game.rootScene.addChild(game.swwlogo);
 
 } // end game.onload #initialize game
 

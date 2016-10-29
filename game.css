@@ -29,7 +29,7 @@ body{
 
 div#enchant-stage {
     position: relative !important;
-    border: 4px #fff dashed;
+    border: 4px #fff solid;
     border-radius: 4px; 
     cursor: url('assets/pointer.ico'), default;
 }

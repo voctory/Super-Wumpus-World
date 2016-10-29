@@ -34,7 +34,7 @@ window.onload = function() {
 }
 
 // preload assets
-game.preload('../assets/halloween/background.png',
+game.preload('../assets/background.png',
 	     '../assets/ground.png',
 	     '../assets/play.png',
 	     '../assets/flappywumpuslogo2.png');
@@ -43,7 +43,6 @@ game.preload('../assets/halloween/background.png',
 // initialize game
 
 game.onload = function(){
-	console.log("hi")
 	game.bg = new Sprite(1280,720);
   game.bg.image = game.assets['../assets/background.png'];
 

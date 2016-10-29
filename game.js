@@ -39,7 +39,8 @@ game.preload('../assets/background.png',
 	     '../assets/play.png',
 	     '../assets/flappywumpuslogo2.png',
 	     '../assets/swwlogo.png',
-	     '../assets/clicktostart.png');
+	     '../assets/clicktostart.png',
+	     '../assets/hills.png');
 
 
 // initialize game
@@ -50,6 +51,13 @@ game.onload = function(){
 
  	// add game.bg to rootScene
 	game.rootScene.addChild(game.bg);
+
+	// adding the hills
+
+	game.hills = new Sprite(1280,720);
+	game.hills.image = game.assets['../assets/hills.png'];
+
+	game.rootScene.addChild(game.hills);
 
 	// add the floor
  	game.ground = new Sprite(1280,86);

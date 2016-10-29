@@ -38,7 +38,8 @@ game.preload('../assets/background.png',
 	     '../assets/ground.png',
 	     '../assets/play.png',
 	     '../assets/flappywumpuslogo2.png',
-	     '../assets/swwlogo.png');
+	     '../assets/swwlogo.png',
+	     '../assets/clicktostart.png');
 
 
 // initialize game
@@ -59,15 +60,15 @@ game.onload = function(){
  	// add game.ground to rootScene
 	game.rootScene.addChild(game.ground);
 
-	// adding playbutton stuff
+	// adding startbutton stuff
 
-	game.playbutton = new Sprite(300,100);
-	game.playbutton.image = game.assets['../assets/play.png'];
-	game.playbutton.y = game.height/2 + 50;
-	game.playbutton.x = game.width/2 - 150;
-	game.playbutton.buttonMode = "left"
+	game.startbutton = new Sprite(500,80);
+	game.startbutton.image = game.assets['../assets/clicktostart.png'];
+	game.startbutton.y = game.height/2 + 50;
+	game.startbutton.x = game.width/2 - 250;
+	game.startbutton.buttonMode = "left"
 
-	game.rootScene.addChild(game.playbutton);
+	game.rootScene.addChild(game.startbutton);
 
 	// adding the logo
 
@@ -77,8 +78,26 @@ game.onload = function(){
 	game.swwlogo.x = game.width/2 - 500;
 
 	game.rootScene.addChild(game.swwlogo);
+	startFlashing()
 
 } // end game.onload #initialize game
+
+var textVisible = true;
+
+function startFlashing() {
+	setTimeout(function() {
+		if (textVisible == true) {
+			game.rootScene.removeChild(game.startbutton);
+			textVisible = false;
+			startFlashing()
+		}
+		else {
+			game.rootScene.addChild(game.startbutton);
+			textVisible = true;
+			startFlashing()
+		}
+	}, 500)
+}
 
 game.onenterframe = function(){
 

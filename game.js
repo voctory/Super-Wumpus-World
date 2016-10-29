@@ -43,6 +43,7 @@ game.preload('../assets/halloween/background.png',
 // initialize game
 
 game.onload = function(){
+	console.log("hi")
 	game.bg = new Sprite(1280,720);
   game.bg.image = game.assets['../assets/background.png'];
 
@@ -85,5 +86,8 @@ game.onload = function(){
 
 } // end game.onload #initialize game
 
-/
+game.onenterframe = function(){
+
+}
+
 game.start();

@@ -1,8 +1,7 @@
 /*
 ┏-----------------------------------------------┓
-|               Flappy Wumpus                   |
-|             By A Generic Gamer                |
-| Adapted from Goma Games Workshop: Flappy Flap |
+|               Super Wumpus World              |
+|             	  By Voctor                		|
 |  By using this code you acknowledge and agree |
 |      to the license in the master branch      |
 ┗-----------------------------------------------┛

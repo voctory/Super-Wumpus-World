@@ -7,8 +7,6 @@
 ┗-----------------------------------------------┛
 */
 
-
-
 enchant(); // initialize
 var game = new Core(1280, 720); // game stage
 game.scale = 1;
@@ -176,6 +174,7 @@ function jumpstageone() {
 }
 
 function testingFunc(arg) {
+	console.log(arg.type)
 	if (arg.type == "rightbuttondown") {
 		game.avatar.rotation = 0
 		game.avatar.x = game.avatar.x + speed

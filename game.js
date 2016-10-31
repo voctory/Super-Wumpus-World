@@ -1,14 +1,11 @@
 /*
 ┏-----------------------------------------------┓
-|               Flappy Wumpus                   |
-|             By A Generic Gamer                |
-| Adapted from Goma Games Workshop: Flappy Flap |
+|               Super Wumpus World              |
+|             	  By Voctor                		|
 |  By using this code you acknowledge and agree |
 |      to the license in the master branch      |
 ┗-----------------------------------------------┛
 */
-
-
 
 enchant(); // initialize
 var game = new Core(1280, 720); // game stage
@@ -177,6 +174,7 @@ function jumpstageone() {
 }
 
 function testingFunc(arg) {
+	console.log(arg.type)
 	if (arg.type == "rightbuttondown") {
 		game.avatar.rotation = 0
 		game.avatar.x = game.avatar.x + speed
